@@ -1,0 +1,92 @@
+{
+  "className": "Ownable",
+  "args": [],
+  "code": "608060405234801561001057600080fd5b5060008054600160a060020a03191633179055610185806100326000396000f3fe60806040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416638da5cb5b8114610050578063f2fde38b14610081575b600080fd5b34801561005c57600080fd5b506100656100b6565b60408051600160a060020a039092168252519081900360200190f35b34801561008d57600080fd5b506100b4600480360360208110156100a457600080fd5b5035600160a060020a03166100c5565b005b600054600160a060020a031681565b600054600160a060020a031633146100dc57600080fd5b600160a060020a03811615156100f157600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a039290921691909117905556fea165627a7a72305820f303096e504d377c24c881300aba305d257bfcc6e7bb78abde278909ca022f300029",
+  "runtimeBytecode": "60806040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416638da5cb5b8114610050578063f2fde38b14610081575b600080fd5b34801561005c57600080fd5b506100656100b6565b60408051600160a060020a039092168252519081900360200190f35b34801561008d57600080fd5b506100b4600480360360208110156100a457600080fd5b5035600160a060020a03166100c5565b005b600054600160a060020a031681565b600054600160a060020a031633146100dc57600080fd5b600160a060020a03811615156100f157600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a039290921691909117905556fea165627a7a72305820f303096e504d377c24c881300aba305d257bfcc6e7bb78abde278909ca022f300029",
+  "realRuntimeBytecode": "60806040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416638da5cb5b8114610050578063f2fde38b14610081575b600080fd5b34801561005c57600080fd5b506100656100b6565b60408051600160a060020a039092168252519081900360200190f35b34801561008d57600080fd5b506100b4600480360360208110156100a457600080fd5b5035600160a060020a03166100c5565b005b600054600160a060020a031681565b600054600160a060020a031633146100dc57600080fd5b600160a060020a03811615156100f157600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a039290921691909117905556fea165627a7a72305820",
+  "linkReferences": {},
+  "swarmHash": "f303096e504d377c24c881300aba305d257bfcc6e7bb78abde278909ca022f30",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "77800",
+      "executionCost": "20421",
+      "totalCost": "98221"
+    },
+    "external": {
+      "owner()": "537",
+      "transferOwnership(address)": "22789"
+    }
+  },
+  "functionHashes": {
+    "owner()": "8da5cb5b",
+    "transferOwnership(address)": "f2fde38b"
+  },
+  "abiDefinition": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8da5cb5b"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xf2fde38b"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event",
+      "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+    }
+  ],
+  "filename": "C:/Datos/Desarrollos/embark-acerta/embark-acerta_v3_1/.embark/contracts/Ownable.sol",
+  "originalFilename": "contracts\\Ownable.sol",
+  "path": "C:\\Datos\\Desarrollos\\embark-acerta\\embark-acerta_v3_1\\contracts\\Ownable.sol",
+  "gas": "auto",
+  "type": "file",
+  "deploy": true,
+  "_gasLimit": 6000000,
+  "error": false,
+  "deploymentAccount": "0x57faE2B3A0FB7e918E65A5faF86234ADc3C6394B",
+  "realArgs": [],
+  "address": "0x2EF1931B451B220653b474e23E9A1405F7CE3fB3",
+  "deployedAddress": "0x2EF1931B451B220653b474e23E9A1405F7CE3fB3"
+}

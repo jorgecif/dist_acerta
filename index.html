@@ -1,0 +1,203 @@
+<html>
+  <head>
+    <title>Acerta - Documentos seguros en la blockchain</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/180.png">
+    <link rel="icon" type="image/png" href="http://localhost:8000/images/app/images/icon_16.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:8000/images/app/images/icon_192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://localhost:8000/images/app/images/icon_96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://localhost:8000/images/app/images/icon_16.png" sizes="16x16">
+    <!-- <link rel="manifest" href="https://atchai.com/img/favicons/manifest.json">  -->
+    <link rel="mask-icon" href="http://localhost:8000/images/app/images/3d.svg">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #130094;>
+      <a class="navbar-brand" href="/">
+        <img src="./images/app/images/Acerta_logo.png" alt="" height="30" class="d-inline-block align-top">
+   
+      </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+     
+      </ul>
+      <div class="form-inline my-2 my-lg-0" _lpchecked="1">      
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+             <a class="nav-link" href="/">+ Crear nuevo documento</a>
+           </li>
+          </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="jumbotron">
+    <h1 class="display-3">Acerta</h1>
+    <p class="lead">Documentos seguros sobre la blockchain.</p>
+    <hr class="my-4" >
+    <p>Acerta es una alternativa descentralizada para asegurar tus documentos importantes sobre la blockchain.</p>
+    <p>Los documentos se guardan de forma distribuída en la red IPFS y sus firmas son guardadas en la blockchain de Ethereum.</p>  
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm text-center">
+            <a class="btn btn-primary btn-lg btn-learn-more" role="button" style="color:white">Instrucciones</a>
+        </div>
+        <div class="col-sm text-center">
+            <a class="btn btn-primary btn-lg btn-crear" role="button" style="color:white">Crear</a>
+        </div>
+        <div class="col-sm text-center">
+            <a class="btn btn-primary btn-lg btn-verificar" role="button" style="color:white">Verificar</a>
+        </div>
+        <div class="col-sm text-center">
+          <a class="btn btn-primary btn-lg btn-descargar" role="button" style="color:white">Descargar</a>
+      </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <div id="learn-more" style="margin-top:50px">
+      
+      <h3>Modo de uso</h3>
+      <p>Protege tus documentos importantes en sólo dos pasos</a>.</p>  
+      
+      <h5>Paso 1: Subir documento</h5>
+      <p>Sube el documento que quieras asegurar.  Será guardado en IPFS <a href="https://ipfs.io/">IPFS</a>, un sistema de nube público descentralizado.</p>  
+    
+      <h5>Paso 2: Verificar el documento</h5>
+      <p>Al hacer click en "Acepto" se abrirá MetaMask y se solicitará el envío de una transacción por 0 Ethers. Habrá un costo de gas para esta transacción, probablemente entre $ 0.3 y $ 0.30. Su dirección de ethereum se asociará públicamente con el documento.</p>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container" id="main-content">  <!--div de contenido principal-->
+    
+    <div class="row" id="creardoc" style="margin: 50 0 50 0px">
+      
+      
+      
+      <div class="col-md-2 text-center">
+        <svg> 
+          <rect id="crear" x="0" y="0" width="200" height="75"  rx="8" ry="8" fill="rgb(19, 0, 148)"  />
+          <text x="10" y="35" font-family="Verdana" font-size="18" fill="white">Crear nuevo</text>
+          <text x="10" y="55" font-family="Verdana" font-size="18" fill="white">documento</text>
+        </svg>
+
+
+      </div>
+      <div class="col-md-10 text-center">
+         <div class="card bg-light mb-3 mx-auto" id="crearcert" style="max-width:90%;">
+          <div class="card-header"><b>Paso 1:</b> Crear documento </div>
+          <div class="card-body">
+            <div class="form-group form-inline">
+              <input type="file" class="form-control"> 
+              <button class="uploadFile set btn btn-outline-primary">Registrar</button>
+            </div>
+          </div>
+          <div class="results" style="margin: 5 30 5 30px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    <div class="row" id="verificardoc" style="margin: 50 0 50 0px">
+      <div class="col-md-2 text-center">
+        <h2><a id="crear"></a>Verificar documento</h2>
+      </div>
+
+      <div class="col-md-10 text-center">
+      
+      <div class="card bg-light mb-3 mx-auto" id="vericert" style="max-width:90%;">
+        <div class="card-header"><b>Paso 2:</b> Verificar documento </div>
+        <div class="card-body">
+          <div class="form-group form-inline">
+            <input type="file" class="form-control"> 
+            <button class="verificar_doc set btn btn-outline-primary">Verificar</button>
+          </div>
+          <div class="results" style="margin: 5 30 5 30px">
+          </div>
+          </div>
+          <div class="results2" style="margin: 5 30 5 30px">
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="row" id="descargardoc" style="margin: 50 0 50 0px">
+      <div class="col-md-2 text-center">
+        <h2><a id="crear"></a>Descargar documento</h2>
+      </div>
+      <div class="col-md-10 text-center">
+
+      <div class="card bg-light mb-3 mx-auto" id="desccert" style="max-width:90%;">
+        <div class="card-header"><b>Paso 3:</b> Descargar documento </div>
+        <div class="card-body">
+          <div class="form-group form-inline">
+            <input class="texto_hash" placeholder="Hash"> 
+            <button class="descargar_doc set btn btn-outline-primary">Descargar</button>
+          </div>
+          <div class="results" style="margin: 5 30 5 30px"></div>
+
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+</div>  <!--div de contenido principal-->
+
+
+
+    <!--Footer-->
+    <footer class="page-footer font-small pt-0" style="margin-top:50px; background-color: #130094;">
+      
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3 text-center" style="background-color: #130094">
+            <img src="./images/app/images/logoquid.png" alt="" class="d-inline-block align-top">  
+          <div class="container-fluid" style="color:white">
+          <p>Acerta by QüidLab. Todos los derechos reservados &copy; 2021. Creado con &#128151; por <a href="https://quidlab.co" style="color:#e83e8c;"> Qüidlab.co </a> </p>
+          </div>
+      </div>
+      <!--/Copyright-->
+
+  </footer>
+  <!--/Footer-->
+
+  </body>
+</html>
